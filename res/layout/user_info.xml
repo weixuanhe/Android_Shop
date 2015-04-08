@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="10.0dip" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_middle" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_avatar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="76.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_avatar_text_"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_avatar_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <ImageView
+            android:id="@+id/user_info_avatar_image"
+            android:layout_width="55.0dip"
+            android:layout_height="55.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_avatar_go"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_nick_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_nick_name_text"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_nick_name_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_nick_name_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_gender_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_gender_text"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_gender_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_gender_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_light"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_phone_text"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_phone_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_phone_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_middle" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@color/divider_color_middle" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_signature_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_signature_text_"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_signature_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_signature_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_background_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_background_text"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_background_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_background_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_address_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/user_info_address_text"
+            android:textColor="@color/official_text0"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/user_info_address_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/user_info_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/user_info_address_go"
+            android:ellipsize="end"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/official_text2"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/divider_color_middle" />
+
+</LinearLayout>

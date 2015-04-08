@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip" >
+
+    <ImageView
+        android:id="@+id/slide_toogle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="15.0dip"
+        android:scaleType="center"
+        android:src="@drawable/slide_toogle_btn" />
+
+    <View
+        android:id="@+id/notice_dot"
+        android:layout_width="8.0dip"
+        android:layout_height="8.0dip"
+        android:layout_alignRight="@+id/slide_toogle"
+        android:layout_alignTop="@+id/slide_toogle"
+        android:layout_marginRight="11.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/index_dot"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/shop_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="15.0dip"
+        android:scaleType="center"
+        android:src="@drawable/shop_cart" />
+
+    <View
+        android:id="@+id/red_dot"
+        android:layout_width="8.0dip"
+        android:layout_height="8.0dip"
+        android:layout_alignRight="@+id/shop_cart"
+        android:layout_alignTop="@+id/shop_cart"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/im_unread_message_notify_red_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@+id/shop_cart"
+        android:layout_toRightOf="@+id/slide_toogle"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/index_search_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6.0dip"
+            android:text="@string/index_search"
+            android:textColor="@color/official_text99"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</merge>

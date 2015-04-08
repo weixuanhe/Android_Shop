@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/login_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30.0dip"
+        android:paddingTop="30.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_title_slash" />
+
+            <TextView
+                android:id="@+id/third_login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#fff6f6f6"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="@string/login_title"
+                android:textColor="@color/official_text2"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/login_input_background"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/login_uname_ly"
+                layout="@layout/login_new_input_item" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffe5e5e5" />
+
+            <include
+                android:id="@+id/login_password_ly"
+                layout="@layout/login_new_input_item" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mg_login_captcha_textlayuot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="12.0dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/captcha_notice"
+                android:textColor="@color/official_text2"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/mg_login_refresh_captcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/captcha_refresh"
+                android:textColor="@color/official_text2"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="47.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/login_white_btn_bg"
+            android:paddingBottom="5.0dip"
+            android:text="@string/login"
+            android:textColor="@color/login_white_btn_color"
+            android:textSize="20.0sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/third_party_login_margin"
+            android:layout_marginTop="12.0dip" >
+
+            <TextView
+                android:id="@+id/find_password_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="15.0dip"
+                android:paddingBottom="10.0dip"
+                android:text="@string/is_pwd_forgen"
+                android:textColor="@color/official_text2"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/world_login_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="15.0dip"
+                android:paddingBottom="10.0dip"
+                android:paddingRight="5.0dip"
+                android:text="@string/world_login_title"
+                android:textColor="@color/official_text2"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

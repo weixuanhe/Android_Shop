@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_marginTop="-2dp" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/main_"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <RadioButton
+            android:id="@+id/radio_homepage"
+            style="@style/radioStyle"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_main_bottom_home" />
+
+        <RadioButton
+            android:id="@+id/radio_wujian"
+            style="@style/radioStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_main_bottom_category" />
+
+        <RadioButton
+            android:id="@+id/radio_scan"
+            style="@style/radioStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_main_bottom_faxian" />
+
+        <RadioButton
+            android:id="@+id/radio_detail"
+            style="@style/radioStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_main_bottom_cart" />
+
+        <RadioButton
+            android:id="@+id/radio_my"
+            style="@style/radioStyle"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_main_bottom_personal" />
+    </RadioGroup>
+
+</RelativeLayout>

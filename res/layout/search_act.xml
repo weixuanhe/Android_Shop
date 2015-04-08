@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_bar"
+        android:layout_width="wrap_content"
+        layout="@layout/search_act_topbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/app_stroke_color2" />
+
+    <ListView
+        android:id="@+id/search_tips_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/app_stroke_color2"
+        android:dividerHeight="@dimen/divider_height"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/recommond_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.minicooper.view.MGWebImageView
+                android:id="@+id/search_top_ad_image_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/search_hot_layout"
+                layout="@layout/search_act_hot" />
+
+            <include
+                android:id="@+id/search_history_layout"
+                android:layout_height="wrap_content"
+                layout="@layout/search_act_history" />
+
+            <View
+                android:id="@+id/history_layout_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/app_stroke_color2" />
+
+            <TextView
+                android:id="@+id/clear_search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:drawableLeft="@drawable/delete_icon"
+                android:drawablePadding="5.5dip"
+                android:text="@string/search_clear_history"
+                android:textColor="@color/official_text2"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xd_goods_detail_top_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/detail_title_bar_height"
+    android:layout_alignParentTop="true" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99131313" />
+
+    <ImageView
+        android:id="@+id/detail_backbtn"
+        android:layout_width="37.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6.5dip"
+        android:scaleType="center"
+        android:src="@drawable/back_btn_white" />
+
+    <ImageView
+        android:id="@+id/detail_home_btn"
+        android:layout_width="37.0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/detail_backbtn"
+        android:scaleType="center"
+        android:src="@drawable/home_icon" />
+
+    <ImageView
+        android:id="@+id/detail_im_btn"
+        android:layout_width="37.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.5dip"
+        android:scaleType="center"
+        android:src="@drawable/im_to_contact_btn_bg"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/detail_shopping_cart"
+        android:layout_width="37.0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/detail_im_btn"
+        android:scaleType="center"
+        android:src="@drawable/cart_icon" />
+
+    <View
+        android:id="@+id/detail_shopping_new"
+        android:layout_width="8.0dip"
+        android:layout_height="8.0dip"
+        android:layout_alignRight="@+id/detail_shopping_cart"
+        android:layout_alignTop="@+id/detail_shopping_cart"
+        android:layout_marginRight="2.0dip"
+        android:layout_marginTop="12.5dip"
+        android:background="@drawable/im_unread_message_notify_red_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

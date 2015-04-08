@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F2F3F5" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutImage"
+                android:layout_width="fill_parent"
+                android:layout_height="325dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/product_item_corner"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dip" >
+
+                <FrameLayout
+                    android:id="@+id/framelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="320dip"
+                    android:background="#ffffff" >
+
+                    <cn.haokuai.supershop.app.widget.ViewFlow
+                        android:id="@+id/main_ads_view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:gravity="center"
+                        android:padding="3dip" >
+
+                        <cn.haokuai.supershop.app.widget.CircleFlowIndicator
+                            android:id="@+id/viewflowindic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:padding="2dip" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayoutImage"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="韩版磨毛字母T"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout1"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="￥35.00"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout2"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="17.0dip"
+                android:paddingTop="14.0dip" >
+
+                <TextView
+                    android:id="@+id/im_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/goods_detail_im_icon"
+                    android:drawablePadding="5.0dip"
+                    android:gravity="center"
+                    android:text="@string/connect"
+                    android:textColor="@color/official_text2"
+                    android:textSize="13.0dip" />
+
+                <RelativeLayout
+                    android:id="@+id/like_btn_outer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="23.0dip" >
+
+                    <FrameLayout
+                        android:id="@+id/like_btn_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/like_btn"
+                            android:layout_width="21.0dip"
+                            android:layout_height="18.0dip"
+                            android:src="@drawable/detail_like_icon_grey" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/like_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/like_btn_container"
+                        android:paddingLeft="3.0dip"
+                        android:textColor="@color/official_text2"
+                        android:textSize="13.0dip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17.0dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="22.0dip"
+                        android:layout_height="20.0dip"
+                        android:src="@drawable/detail_share_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="5.0dip"
+                        android:paddingTop="1.0dip"
+                        android:text="@string/note_social_share"
+                        android:textColor="@color/official_text2"
+                        android:textSize="13.0dip" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/more_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.0dip"
+                    android:src="@drawable/detail_more"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout3"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_circual"
+                    android:text="加入购物车" />
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_circual"
+                    android:text="立即购买" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout4"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include_discount"
+                    layout="@layout/shop_discount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout5"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/search_hot_layout"
+                    layout="@layout/youdian_shop_owner_ly" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout6"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include01"
+                    layout="@layout/youdian_shop_owner_ly" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout7"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include02"
+                    layout="@layout/detail_good_info_ly" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout8"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include03"
+                    layout="@layout/evaluation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout9"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include04"
+                    layout="@layout/shop_like" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout11"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include05"
+                    layout="@layout/detail_yd_recommend_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout10"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include06"
+                    layout="@layout/detail_comments_ltem" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

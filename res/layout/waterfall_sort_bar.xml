@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/default_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/sort_bar_item_bg"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/shop_tab_default"
+            android:textColor="@color/sort_bar_text_color"
+            android:textSize="14.0sp"
+            android:focusable="true" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/sales"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/sort_bar_item_bg"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/shop_tab_sales"
+            android:textColor="@color/sort_bar_text_color"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/latest"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/sort_bar_item_bg"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/shop_tab_latest"
+            android:textColor="@color/sort_bar_text_color"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/sort_bar_item_bg"
+            android:drawablePadding="4.0dip"
+            android:drawableRight="@drawable/shop_sort_def"
+            android:gravity="center"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/shop_tab_price"
+            android:textColor="@color/sort_bar_text_color"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+</merge>

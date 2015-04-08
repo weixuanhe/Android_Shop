@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.haokuai.supershop.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F3F5" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="110.0dip"
+        android:background="#ffffffff" >
+
+        <cn.haokuai.supershop.app.widget.ViewFlow
+            android:id="@+id/main_ads_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </cn.haokuai.supershop.app.widget.ViewFlow>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#88252525"
+            android:gravity="center"
+            android:padding="3.0dip" >
+
+            <cn.haokuai.supershop.app.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:padding="2.0dip"
+                app:activeColor="#ffff0000"
+                app:activeType="fill"
+                app:circleSeparation="20.0dip"
+                app:inactiveColor="#ffffffff"
+                app:inactiveType="fill"
+                app:radius="4.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

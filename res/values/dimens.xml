@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="third_party_login_margin">65.0dip</dimen>
+    <dimen name="divider_height">1.0px</dimen>
+    <dimen name="detail_title_bar_height">50.0dip</dimen>
+    <dimen name="base_title_bar_height">45.0dip</dimen>
+
+</resources>
